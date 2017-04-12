@@ -17,6 +17,9 @@ namespace myapi.data
         {
         }
 
+        public WeatherContext()
+        { }
+
         public DbSet<WeatherEvent> WeatherEvents { get; set; }
         public DbSet<Reaction> Reactions { get; set; }
         public DbSet<Comment> Comments { get; set; }

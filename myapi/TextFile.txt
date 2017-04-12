@@ -6,3 +6,4 @@ to get to command line:
 
 .\psql.exe mydb postgres
 
+could not get dotnet ef command to work using PS instead.
