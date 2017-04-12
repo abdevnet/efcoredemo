@@ -1,0 +1,8 @@
+﻿start postgresql
+
+"C:/Program Files/PostgreSQL/9.6/bin\pg_ctl" -D "c:/datadir" -l c:\logs\logfile.txt  start
+
+to get to command line:
+
+.\psql.exe mydb postgres
+
