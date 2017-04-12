@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace myapi.data
 {
+    /// <summary>
+    /// our context object
+    /// </summary>
     public class WeatherContext : DbContext
     {
         public WeatherContext(DbContextOptions<WeatherContext> options) : base(options)
