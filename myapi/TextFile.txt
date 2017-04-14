@@ -30,3 +30,5 @@ Update-Database
 
 // reverse engineer a database using scaffold dbcontext
 Scaffold-DbContext
+
+// now we setup the controller.
