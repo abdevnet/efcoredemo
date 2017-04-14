@@ -5,5 +5,12 @@
 to get to command line:
 
 .\psql.exe mydb postgres
+password=FireBert!
+
 
 could not get dotnet ef command to work using PS instead.
+
+Tools are split 
+For PowerShell support: Microsoft.EntityFrameworkCore.Tools 1.1.0
+For dotnet CLI support: Microsoft.EntityFrameworkCore.Tools.DotNet 1.0.0
+
