@@ -14,3 +14,5 @@ Tools are split
 For PowerShell support: Microsoft.EntityFrameworkCore.Tools 1.1.0
 For dotnet CLI support: Microsoft.EntityFrameworkCore.Tools.DotNet 1.0.0
 
+// add the configuration stuff first then;;;;
+Add-Migration init
