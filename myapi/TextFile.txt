@@ -34,3 +34,8 @@ Scaffold-DbContext
 // now we setup the controller.
 
 test with this link   http://localhost:1479/api/weather
+
+// now we seed the data.
+// we are reading data from JSON file using the app services to get the context and pass to a seeder class
+  // more info on .net core dependency injection  https://wildermuth.com/2016/08/07/ASP-NET-Core-Dependency-Injection
+

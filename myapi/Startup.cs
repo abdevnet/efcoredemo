@@ -43,6 +43,10 @@ namespace myapi
             loggerFactory.AddDebug();
 
             app.UseMvc();
+
+            var dataText = System.IO.File.ReadAllText(@"weatherdataseed.json");
+            Seeder.Seedit(dataText, app.ApplicationServices);
+
         }
     }
 }
