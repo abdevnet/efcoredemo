@@ -14,5 +14,19 @@ Tools are split
 For PowerShell support: Microsoft.EntityFrameworkCore.Tools 1.1.0
 For dotnet CLI support: Microsoft.EntityFrameworkCore.Tools.DotNet 1.0.0
 
+//    https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/powershell
+
 // add the configuration stuff first then;;;;
 Add-Migration init
+
+// use script migration to see a script for the migration
+Script-Migration
+
+// you must use Remove-Migration to remove a migration!  Do not just delete the .cs files
+Remove-Migration
+
+// use update database to apply changes to database
+Update-Database
+
+// reverse engineer a database using scaffold dbcontext
+Scaffold-DbContext
