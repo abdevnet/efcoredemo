@@ -34,6 +34,7 @@ namespace myapi
             services.AddDbContext<WeatherContext>(
                 options => options.UseNpgsql(Configuration["Data:PostgreConnection:ConnectionString"])
             );
+            services.AddScoped<WeatherDataRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

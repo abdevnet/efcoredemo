@@ -12,10 +12,12 @@ namespace myapi.Controllers
     public class WeatherController : Controller
     {
         private WeatherContext _context;
+        WeatherDataRepository _repo;
 
-        public WeatherController(WeatherContext context)
+        public WeatherController(WeatherContext context, WeatherDataRepository services)
         {
             _context = context;
+            _repo = services;
         }
 
 
@@ -28,5 +30,11 @@ namespace myapi.Controllers
                 ThenInclude(r => r.Comments);
         }
 
+        //  api/weather/2016-07-23
+        [HttpGet("{date}")]
+        public IEnumerable<WeatherEvent> Get(DateTime date)
+        {
+            return _context.WeatherEvents.Where(w => w.Date.Date == date.Date).ToList();
+        }
     }
 }
