@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using myapi.data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -29,6 +31,9 @@ namespace myapi
         {
             // Add framework services.
             services.AddMvc();
+            services.AddDbContext<WeatherContext>(
+                options => options.UseNpgsql(Configuration["Data:PostgreConnection:ConnectionString"])
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
