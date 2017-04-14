@@ -2,18 +2,30 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using myapi.data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace myapi.Controllers
 {
     [Route("api/[controller]")]
     public class WeatherController : Controller
     {
+        private WeatherContext _context;
+
+        public WeatherController(WeatherContext context)
+        {
+            _context = context;
+        }
+
+
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<WeatherEvent> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _context.WeatherEvents.
+                Include(w => w.Reactions).
+                ThenInclude(r => r.Comments);
         }
 
     }

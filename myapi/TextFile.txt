@@ -32,3 +32,5 @@ Update-Database
 Scaffold-DbContext
 
 // now we setup the controller.
+
+test with this link   http://localhost:1479/api/weather
