@@ -26,8 +26,7 @@ namespace myapi.Controllers
         public IEnumerable<WeatherEvent> Get()
         {
             return _context.WeatherEvents.
-                Include(w => w.Reactions).
-                ThenInclude(r => r.Comments);
+                Include(w => w.Reactions).ToList();
         }
 
         //  api/weather/2016-07-23
