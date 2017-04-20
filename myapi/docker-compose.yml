@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  myapi:
+    image: myapi
+    build:
+      context: 
+      dockerfile: Dockerfile
