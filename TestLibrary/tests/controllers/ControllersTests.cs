@@ -26,6 +26,16 @@ namespace myapi.tests.Controllers
             }
         }
         [Fact]
+        public void CanGetWeatherEventsFail()
+        {
+            _context = CreateAndSeedContext();
+            using (var controller = new WeatherController(_context, null))
+            {
+                var results = controller.Get();
+                Assert.Equal(70, results.Count());
+            }
+        }
+        [Fact]
         public void CanGetWeatherEventsFilteredByDate()
         {
             _context = CreateAndSeedContext();
