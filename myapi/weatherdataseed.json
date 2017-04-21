@@ -5,8 +5,8 @@
         "type": 5,
         "reactions": [
             {
-                "name": "Julie",
-                "quote": "Oh so sunny!",
+                "name": "Andy",
+                "quote": "Sunny day!",
                 "comments": []
             }
         ],
@@ -25,18 +25,18 @@
         "type": 5,
         "reactions": [
             {
-                "name": "Julie",
-                "quote": "Oh lovely summer sun! Too bad I'm on my computer",
+                "name": "Andy",
+                "quote": "Nasty rain today!",
                 "comments": []
             },
             {
-                "name": "Everyone in vermont",
-                "quote": "Hooray let's go play!",
+                "name": "Missouri",
+                "quote": "If you don't like the weather just wait and it will change!",
                 "comments": []
             },
             {
-                "name": "Sampson",
-                "quote": "I'd like to go for a swim, please!",
+                "name": "Izzy",
+                "quote": "I want to play ball!  ",
                 "comments": []
             }
         ],
@@ -69,11 +69,11 @@
         "type": 2,
         "reactions": [
             {
-                "name": "Julie",
-                "quote": "Snow? In July? Okay this is ridiculous even for VT!",
+                "name": "Andy",
+                "quote": "blah!",
                 "comments": [
                     {
-                        "text": "Get over it, Julie!"
+                        "text": "say huh"
                     }
                 ]
             }
