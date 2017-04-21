@@ -1,6 +1,5 @@
 FROM microsoft/aspnetcore:1.0
-ARG source
 WORKDIR /app
-EXPOSE 80
-COPY ${source:-obj/Docker/publish} .
+COPY . /app
+EXPOSE 5002/tcp
 ENTRYPOINT ["dotnet", "myapi.dll"]

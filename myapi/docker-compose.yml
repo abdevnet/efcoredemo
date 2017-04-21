@@ -1,8 +1,15 @@
 version: '2'
 
-services:
-  myapi:
-    image: myapi
-    build:
-      context: 
-      dockerfile: Dockerfile
+services: 
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: FireBert!
+      POSTGRES_USER: postgres
+      POSTGRES_DB: mydb
+  web:
+    build: 
+      context: .
+    ports:
+     - "5002:5002"
+ 
